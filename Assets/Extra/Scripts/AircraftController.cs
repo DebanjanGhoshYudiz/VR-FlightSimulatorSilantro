@@ -70,10 +70,9 @@ public class AircraftController : MonoBehaviour
         {
             HandleFlightCrash(aircraftRigidbody, aircraftController);
         }
-
         else if (collision.gameObject.CompareTag("Ground"))
         {
-            //cond for checking the air time 
+            // Condition for checking the air time 
             if (airborneTime >= requiredAirborneTime)
             {
                 isLanded = true;
@@ -88,7 +87,13 @@ public class AircraftController : MonoBehaviour
             isAirborne = false;
             airborneTime = 0f;
         }
+        else if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            // Handle crash on obstacle collision
+            HandleFlightCrash(aircraftRigidbody, aircraftController);
+        }
     }
+
 
     private void OnCollisionExit(Collision collision)
     {

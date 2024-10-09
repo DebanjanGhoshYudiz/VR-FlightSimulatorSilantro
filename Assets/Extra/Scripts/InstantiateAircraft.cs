@@ -33,7 +33,15 @@ public class InstantiateAircraft : MonoBehaviour
 
         currentAircraft = Instantiate(aircraftPrefab, spawnPosition.position, spawnPosition.rotation);
         currentAircraft.SetActive(true);
+
+        Rigidbody rb = currentAircraft.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero; 
+        }
     }
+
 
     public void OnDestroy()
     {
