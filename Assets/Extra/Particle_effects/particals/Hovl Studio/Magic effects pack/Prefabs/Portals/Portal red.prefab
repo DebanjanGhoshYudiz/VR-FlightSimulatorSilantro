@@ -4850,6 +4850,7 @@ GameObject:
   - component: {fileID: 4706116037937865665}
   - component: {fileID: 8715761903829094485}
   - component: {fileID: 2564269725737345609}
+  - component: {fileID: 3630508707791269827}
   m_Layer: 0
   m_Name: Portal red
   m_TagString: Checkpoint
@@ -9730,6 +9731,27 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!135 &3630508707791269827
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617036660772024948}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.7976702
+  m_Center: {x: 0.026835537, y: 0.00050001143, z: 0}
 --- !u!1 &6842134302800741127
 GameObject:
   m_ObjectHideFlags: 0
